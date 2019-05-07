@@ -28,4 +28,13 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemigo")
+        {
+            Destroy(gameObject);
+            Debug.Log("hola");
+        }
+    }
 }

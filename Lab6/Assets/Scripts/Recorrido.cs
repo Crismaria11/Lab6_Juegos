@@ -21,7 +21,7 @@ public class Recorrido : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Recorrer")
+        if(other.gameObject.tag == "Enemigo")
         {
             other.gameObject.GetComponent<EnemyController>().target = recorrido;
         }
